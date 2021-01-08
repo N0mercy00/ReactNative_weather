@@ -33,7 +33,7 @@ const weatherOptions={
         gradient:["#4AC29A","#BDFFF3"]
     },
     Dust: {
-        iconName:"warning",
+        iconName:"weather-cloudy-alert",
         gradient:["#EB5757","#000000"]
     },
     

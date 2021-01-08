@@ -6,10 +6,11 @@ import axios from "axios";
 import Weather from "./Weather";
 
 const API_KEY="";
-var condition="";
+
 export default class extends React.Component {
   state={
-    isLoading:true 
+    isLoading:true,
+    condition:null
   };
   getWeather = async(latitude,longitude)=>{
     const {
@@ -26,9 +27,7 @@ export default class extends React.Component {
         temp   
       });
   
-     console.log(temp);
-     condition=weather[0].main;
-     console.log(condition);   
+   
   };
   getLocation=async()=>{
     try {
